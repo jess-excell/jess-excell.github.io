@@ -30,7 +30,7 @@ header h1
 {
 	padding: 70px;
 	text-align: center;
-	font-size: 500%;
+	font-size: 500% !important;
 }
 
 header nav
@@ -82,8 +82,8 @@ main
 #experience ul::before
 {
 	content: '';
-    	width: 1px;
-    	height: 100%;
+    width: 1px;
+    height: 100%;
 	background-color: var(--accent);
 	position: absolute;
 	left: -10px;
@@ -208,6 +208,7 @@ ion-icon
 {
 	color: var(--text-color);
 }
+
 #contact ion-icon:hover
 {
 	color: var(--accent);
@@ -215,10 +216,12 @@ ion-icon
 
 @media (max-width: 700px)
 {
-	body { font-size: large; }
+	body { font-size: x-large; }
 	main { padding: 0 5%; }
 	footer { padding-left: 5%; padding-right: 5%; }
 	.multi-content { min-width: 90%; }
+	.skill-item { min-width: 90%; }
+	ion-icon { height: 10vw; width: 10vw; }
 }
 
 @media (min-width: 700px) and (max-width: 1500px)
