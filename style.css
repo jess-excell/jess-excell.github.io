@@ -214,7 +214,7 @@ ion-icon
 	color: var(--accent);
 }
 
-@media (max-width: 900px)
+@media only screen and (max-width: 900px)
 {
 	body { font-size: x-large; }
 	main { padding: 0 5%; }
@@ -224,14 +224,14 @@ ion-icon
 	ion-icon { height: 10vw; width: 10vw; }
 }
 
-@media (min-width: 900px) and (max-width: 1500px)
+@media only screen and (min-width: 900px) and (max-width: 1500px)
 {
 	body { font-size: larger; }
  	main { padding: 0 7.5% }
 	footer { padding-left: 7.5%; padding-right: 7.5%; }
 }
 
-@media (min-width: 1500px)
+@media only screen and (min-width: 1500px)
 {
 	body { font-size: larger; }
  	main { padding: 0 12.5% }
