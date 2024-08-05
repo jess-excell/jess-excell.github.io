@@ -1,1 +1,235 @@
+:root
+{
+	--accent: #DC5F00;
+	--accent-lighter: #FD861D;
+	--accent-lightest: #FCB045;
+	--accent-gradient: linear-gradient(120deg, var(--accent) 0%, var(--accent-lighter) 50%, var(--accent-lightest) 100%);
+	--background-light: white;
+	--text-color: #373A40;
+}
 
+body 
+{
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-light);
+	font-family: "Montserrat", sans-serif;
+	color: var(--text-color);
+}
+
+header
+{
+	overflow: hidden;
+	padding: 20px 0px;
+	background: var(--accent-gradient);
+	color: var(--background-light);
+	margin-bottom: 50px;
+}
+
+header h1 
+{
+	padding: 70px;
+	text-align: center;
+	font-size: 500%;
+}
+
+header nav
+{
+	text-align: right;
+}
+
+header nav a
+{
+	color: var(--background-light);
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 20px;
+	transition-duration: 1s;
+}
+
+header nav a:hover
+{
+	text-shadow: 0 0 5px var(--accent-lightest);
+}
+
+main
+{
+	height: fit-content;
+	padding: 30px 100px;
+	overflow: hidden;
+}
+
+.multi-content-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.multi-content
+{
+	flex: 1 1 45%; 
+	min-width: 300px;
+}
+
+#experience ul
+{
+	margin: 15px;
+	padding: 0;
+	position: relative;
+}
+
+#experience ul::before
+{
+	content: '';
+    width: 1px;
+    height: 100%;
+	background-color: var(--accent);
+	position: absolute;
+	left: -10px;
+	top: 0px;
+}
+
+#experience li
+{
+	margin-left: 10px;
+}
+
+#experience li::marker
+{
+	color: var(--accent);
+	font-size: 1.5rem;
+}
+
+#experience h3
+{
+	margin-top: 0;
+}
+
+#experience h4, h5
+{
+	margin: 0px;
+	color: var(--text-color);
+}
+
+#experience h5
+{
+	font-weight: 500;
+}
+
+
+label 
+{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.progress-left
+{
+	text-align: left;
+	width: 75%;
+	display: inline-block;
+	margin: 0;
+}
+
+.progress-right
+{
+	text-align: right;
+	width: 23%;
+	display: inline-block;
+	margin: 0 0 5px 0;
+}
+
+.progress 
+{
+	border-radius: 15px;
+	height: 20px;
+	width: 100%;
+	padding: 3px;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill-item
+{
+	margin: 0 30px 25px 0;
+	flex: 1 1 45%; 
+	min-width: 300px;
+}
+
+.progress::after
+{
+	background-color: var(--progress-color, #DC5F00);
+	border-radius: 15px;
+	height: 8px;
+	width: var(--progress-width);
+	content: "";
+	margin: 6px ;
+	display: block;
+}
+
+h2 
+{
+	color: var(--accent);
+}
+
+footer 
+{
+	background-color: var(--text-color);
+	padding-top: 20px;
+	margin-top: 50px;
+	padding-bottom: 20px;
+	color: var(--background-light);
+}
+
+#side-projects ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+#contact ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contact li
+{
+	display: inline-block;
+	min-width: 40px;
+	padding: 5px;
+	justify-content: center;
+}
+
+ion-icon
+{
+	color: var(--text-color);
+}
+#contact ion-icon:hover
+{
+	color: var(--accent);
+}
+
+@media (max-width: 1000px)
+{
+	body { font-size: large; }
+	main { padding: 0 5%; }
+	footer { padding-left: 5%; padding-right: 5%; }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px)
+{
+	body { font-size: larger; }
+ 	main { padding: 0 7.5% }
+	footer { padding-left: 7.5%; padding-right: 7.5%; }
+}
+
+@media (min-width: 1500px)
+{
+	body { font-size: larger; }
+ 	main { padding: 0 12.5% }
+	footer { padding-left: 12.5%; padding-right: 12.5%; }
+}
