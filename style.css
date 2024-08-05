@@ -216,13 +216,13 @@ ion-icon
 
 @media only screen and (max-width: 700px)
 {
-	body { font-size: large; }
 	main { padding: 0 5%; }
 	footer { padding-left: 5%; padding-right: 5%; }
 	.multi-content { min-width: 90%; }
 	.skill-item { min-width: 90%; }
 	ion-icon { height: 10vw; width: 10vw; }
-	header nav { text-align: center; }
+	header nav { text-align: center; font-size: smaller;}
+	header h1 { font-size: xx-large; }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1500px)
