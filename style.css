@@ -30,7 +30,7 @@ header h1
 {
 	padding: 70px;
 	text-align: center;
-	font-size: 500% !important;
+	font-size: 500% ;
 }
 
 header nav
@@ -155,7 +155,7 @@ label
 {
 	margin: 0 30px 25px 0;
 	flex: 1 1 45%; 
-	min-width: 300px;
+	min-width: 450px;
 }
 
 .progress::after
@@ -214,17 +214,18 @@ ion-icon
 	color: var(--accent);
 }
 
-@media only screen and (max-width: 900px)
+@media only screen and (max-width: 700px)
 {
-	body { font-size: x-large; }
+	body { font-size: large; }
 	main { padding: 0 5%; }
 	footer { padding-left: 5%; padding-right: 5%; }
 	.multi-content { min-width: 90%; }
 	.skill-item { min-width: 90%; }
 	ion-icon { height: 10vw; width: 10vw; }
+	header nav { text-align: center; }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1500px)
+@media only screen and (min-width: 700px) and (max-width: 1500px)
 {
 	body { font-size: larger; }
  	main { padding: 0 7.5% }
