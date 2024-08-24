@@ -144,10 +144,11 @@ label
 .progress 
 {
 	border-radius: 15px;
-	height: 20px;
+	height: 26px;
 	width: 100%;
 	padding: 3px;
 	display: inline-block;
+	box-sizing: border-box;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -163,9 +164,9 @@ label
 	background-color: var(--progress-color, #DC5F00);
 	border-radius: 15px;
 	height: 8px;
-	width: var(--progress-width);
+	width: calc((100% - 14px) * var(--progress-width));
 	content: "";
-	margin: 6px ;
+	margin:  6px ;
 	display: block;
 }
 
